@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include("partials/head.ejs") %>
+        <title><%= person.firstName %>'s Portfolio</title>
+    </head>
+    <body id="body" onload="fade()" class="fade-out">
+        <script>function fade(){
+            document.getElementById("body").classList.remove("fade-out");
+        };</script>
+        <div class="container-body">
+            <%- include("partials/logo.ejs") %>
+            <%- include("partials/nav.ejs") %>
+            
+            <div class="grid">
+                <div class="bio">
+                    <div class="title">
+                        <h1>My BIO</h1>
+                        <hr class="title-underline"></hr>
+                    </div>
+                    <p class="bio-p">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Devin Ledesma is a Web Developer who professionally began writing code in 2017. 
+                        His professional career began when he started learning code full time at Origin Code Academy in San Diego. 
+                        Years before, at the age of 19, Devin began to teach himself code for anything he needed. 
+                        From needing research for tech support to even just his own curiosity on how the programing on computers worked, 
+                        Devin always enjoyed learning code from the beginning. 
+                        He believes learning mostly from trial and error those beginning years is how he’s able to learn and teach code to his peers so effectively! 
+                        Devin loves the challenge of learning something new, 
+                        and prides himself on his ability to learn anything new and necessary to make a project perfect by not only his standards, 
+                        but his customer’s standards. When Devin is not working to hon his coding skills for work, 
+                        he can be found either playing basketball for a recreational league or loving life with his fiance and family.
+                    </p>
+                </div>
+
+                <div class="pad">
+                    <div class="portrait">
+                        <img src="/img/portrait.jpg" alt="portrait" class="image"/>
+                        <div class="overlay">
+                            <div class="text"><a href="https://github.com/dmlsthe1" target="_blank">Devin Ledesma</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--CDN link for  TweenMax-->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+        <script src="/jquery-3.3.1.js"></script>
+        <script src="/script.js"></script> -->
+    </body>
+</html>

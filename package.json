@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmlsthe1/portfolio.git"
+  },
+  "author": "Devin Ledesma <dxangobiz@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmlsthe1/portfolio/issues"
+  },
+  "homepage": "https://github.com/dmlsthe1/portfolio#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^6.2.1",
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.14.11",
+    "twilio": "^3.11.2"
+  }
+}
