@@ -3,7 +3,7 @@
 A webpage I created to consolidate and present some projects I created.
 
 <p align="center">
-  <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="256" title="Github Logo">
+  <img src="https://github.com/dmlsthe1/portfolio/blob/master/public/img/portfolio_home.png" title="portfolio screenshot">
 </p>
 
 ## Setup
