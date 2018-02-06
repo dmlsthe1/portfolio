@@ -2,6 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 var PORT = process.env.PORT || 8080;
+var config = require("./config.js");
 
 const app = express();
 
@@ -38,8 +39,8 @@ app.post("/thanks", (req, res) => {
     
     
     // Twilio Credentials    
-    const accountSid = 'AC6e00b9cc0ba1867e8cfbf48e79860661';
-    const authToken = '9ab4fb0a44ee0e05ce1b68ad74856e56';
+    const accountSid = config.accountSid;
+    const authToken = config.authToken;
     // require the Twilio module and create a REST client
     const client = require('twilio')(accountSid, authToken);
 
