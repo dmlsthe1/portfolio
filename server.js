@@ -2,7 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 var PORT = process.env.PORT || 8080;
-var config = require("./config.js");
+//var config = require("./config.js");
 
 const app = express();
 
@@ -38,9 +38,15 @@ app.get("/contact", (req, res) => {
 app.post("/thanks", (req, res) => {
     
     
-    // Twilio Credentials    
-    const accountSid = config.accountSid;
-    const authToken = config.authToken;
+    // Twilio Credentials on heroku   
+    const accountSid = process.env.accountSid;
+    const authToken = process.env.authToken;
+
+    // Twilio Credentials on github
+    // const accountSid = config.accountSid;
+    // const authToken = config.authToken;
+
+
     // require the Twilio module and create a REST client
     const client = require('twilio')(accountSid, authToken);
 
