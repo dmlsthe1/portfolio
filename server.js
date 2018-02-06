@@ -1,7 +1,7 @@
 const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
-
+var PORT = process.env.PORT || 8080;
 
 const app = express();
 
@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-//app.set("port", (process.env.PORT || 8080));
+app.set("port", (process.env.PORT || 8080));
 
 app.set("views", "./views");
 
@@ -54,6 +54,6 @@ app.post("/thanks", (req, res) => {
     res.render("thanks", {contact: req.body})
 });
 
-app.listen(8080, () => {
-    console.log("listening at http://localhost:8080")
+app.listen(PORT, () => {
+    console.log(`listening at http://localhost:${PORT}`)
 });
