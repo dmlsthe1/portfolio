@@ -13,12 +13,12 @@ npm install
 ```
 ```
 Using Twilio=
-  create config.js file at root of project folder
+  create .env file at root of project folder (make sure .env is added to gitignore file)
     1) code should like like the following without double quotes:
-          "module.exports = {
-            accountSid: 'Your key goes here',
-            authToken: 'your auth token goes here'
-          }"
+          " 
+            accountSid= 'Your key goes here'
+            authToken= 'your auth token goes here'
+          "
     
     2) code in single quotes should be replaced with your related keys from twilio
 ```
