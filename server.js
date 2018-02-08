@@ -57,6 +57,6 @@ app.post("/thanks", (req, res) => {
     res.render("thanks", {contact: req.body})
 });
 
-app.listen(PORT, () => {
+module.exports = app.listen(PORT, () => {
     console.log(`listening at http://localhost:${PORT}`)
 });
