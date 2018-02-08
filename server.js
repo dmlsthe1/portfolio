@@ -3,7 +3,7 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 var PORT = process.env.PORT || 8080;
 var config;
-if(PORT == 8080){
+if(!process.env.accountSid){
     config = require("./config.js");
 }
 
