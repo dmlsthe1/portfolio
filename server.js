@@ -2,7 +2,10 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 var PORT = process.env.PORT || 8080;
-var config = require("./config.js");
+var config;
+if(process.env.PORT){
+    config = require("./config.js");
+}
 
 const app = express();
 
