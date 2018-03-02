@@ -5,12 +5,9 @@ const server = require('../server');
 chai.use(chaiHttp);
 const expect = chai.expect;
 
-// server.listen(process.env.PORT || 4444);
-
-describe('server/app.js', function() {
+describe('server', function() {
   this.timeout(5000);
-  beforeEach((done) => {
-    
+  beforeEach((done) => { 
     done();
   });
 
@@ -27,5 +24,4 @@ describe('server/app.js', function() {
       done();
     });
   });
-
 })
